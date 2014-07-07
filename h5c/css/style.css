@@ -163,6 +163,8 @@ body {
   color: #000000;
   font-size: 16px;
   font-family: "Officina", Arial, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 img {
   width: auto 9;
@@ -185,8 +187,8 @@ a:hover {
 }
 .container {
   margin-top: 1.25rem;
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
+  margin-left: 3.125%;
+  margin-right: 3.125%;
 }
 .nav-main {
   background-color: #f4f4f4;
@@ -335,6 +337,9 @@ a:hover {
 .contents .content-pagination .active {
   color: #eb7c2d;
 }
+.content-new {
+  margin-top: 2.5rem;
+}
 .content .content-header {
   color: #000000;
   font: 2.625rem bold "Officina", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -427,7 +432,7 @@ a:hover {
   margin-left: 0px;
 }
 .content .content-social-btns ul li a {
-  padding: 15px 5px 15px 5px;
+  padding: 15px 5px;
   border: 2px solid #e0ddd9;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -533,7 +538,7 @@ a:hover {
   border: 2px solid #e0ddd9;
   border-bottom-width: 1px;
   font: 2.25rem normal "Officina", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  line-height: 88px;
+  line-height: 5.5rem;
   padding-left: 30px;
 }
 .catalog .nav-catalog ul li:first-child {

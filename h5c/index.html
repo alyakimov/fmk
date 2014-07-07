@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=640">
+    <meta name="viewport" content="width=640, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="HandheldFriendly" content="true">
     <meta name="MobileOptimized" content="width">
     <link rel="stylesheet" href="css/style.css">
     <title>Index</title>
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script>if ($(window).width() < 768) { $('meta[name=viewport]').attr('content','width=640, initial-scale=.5, maximum-scale=.5, user-scalable=no'); }</script>
 </head>
 <body>
 
@@ -30,7 +32,7 @@
             </div>
         </section>
 
-        <section class="container terms">
+        <section class="container terms" onclick="javascript:location.href='terms.html'">
             <article>
                 <h1 class="terms-header">Условия</h1>   
                 <div class="terms-text">Вступайте в «Игровой клуб» и получите БЕСПЛАТНЫЙ доступ к самым популярным браузерным играм! Трафик бесплатный!</div>
@@ -39,7 +41,7 @@
 
         <section class="container banner-header">
             <div class="banner">
-                <img src="images/demo/banner-main.png" alt="*"/>
+                <a href="#"><img src="images/demo/banner-main.png" alt="*"/></a>
             </div>
         </section>
 
