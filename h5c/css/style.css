@@ -1,0 +1,405 @@
+@charset 'UTF-8';
+@font-face {
+  font-family: 'Officina';
+  src: url('/fonts/OfficinaSerifC-Book.otf');
+}
+@font-face {
+  font-family: 'Officina';
+  font-weight: bold;
+  src: url('/fonts/OfficinaSerifC-Bold.otf');
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+input:not([type]),
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  padding-top: 0px;
+}
+input,
+input[type="password"],
+input[type="search"],
+isindex {
+  border: 0px inset;
+}
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #ece9e2;
+  color: #000000;
+  font-size: 16px;
+  font-family: "Officina", Arial, sans-serif;
+}
+img {
+  width: auto 9;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}
+a:hover {
+  color: #eb7c2d;
+}
+a:visit {
+  color: #eb7c2d;
+}
+.page {
+  margin: 0 auto;
+  max-width: 640px;
+}
+.container {
+  margin-top: 1.25rem;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+.nav-main {
+  background-color: #f4f4f4;
+  border-bottom: 2px solid #e0ddd9;
+}
+.nav-main ul li {
+  float: left;
+  font: 1.75rem normal "Officina", Arial, sans-serif;
+  line-height: 5.5rem;
+  height: 5.5rem;
+  border-right: 2px solid #e0ddd9;
+  text-align: center;
+}
+.nav-main ul li:last-child {
+  border-right: 0px;
+}
+.nav-main .nav-main-logo {
+  width: 31.3235294%;
+}
+.nav-main .nav-main-registration {
+  width: 35.4411765%;
+}
+.nav-main .nav-main-registration:after {
+  background: url("../images/arrow-down.png") no-repeat;
+  background-size: 1.3125rem;
+  width: 1.3125rem;
+  height: 2rem;
+  float: right;
+  content: "";
+  position: relative;
+  top: 2rem;
+  right: 0.5rem;
+}
+.nav-main .nav-main-enter {
+  width: 26.7647059%;
+}
+.nav-main .nav-main-enter:after {
+  background: url("../images/arrow-down.png") no-repeat;
+  background-size: 1.3125rem;
+  width: 1.3125rem;
+  height: 2rem;
+  float: right;
+  content: "";
+  position: relative;
+  top: 2rem;
+  right: 0.5rem;
+}
+.nav-slave {
+  padding: 1.25rem;
+  background-color: #ffffff;
+  border: 2px solid #e0ddd9;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+.terms {
+  padding: 1.25rem;
+  background-color: #ffffff;
+  border: 2px solid #e0ddd9;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+.terms .terms-header {
+  color: #000000;
+  font: 2.0625rem bold "Officina", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.terms .terms-text {
+  color: #767676;
+  font: 1.625rem italic "Officina", Arial, sans-serif;
+  margin-top: 1.25rem;
+}
+.terms:after {
+  background: url("../images/arrow-right.png") no-repeat;
+  background-size: 1.3125rem;
+  width: 1.3125rem;
+  height: 2rem;
+  float: right;
+  content: "";
+  position: relative;
+  top: -6rem;
+}
+.banner-header .banner img {
+  border: 2px solid #e0ddd9;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+.content .content-new-header,
+.content .content-top-header {
+  color: #000000;
+  font: 2.625rem bold "Officina", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.content .content-item {
+  float: left;
+  padding: 0.4375rem;
+  background-color: #ffffff;
+  border: 2px solid #e0ddd9;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  width: 45%;
+}
+.content .content-item:nth-child(even) {
+  margin-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+.content .content-item-header {
+  font: 1.75rem normal "Officina", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  margin-top: 0.4375rem;
+}
+.content .content-item-preview {
+  margin-top: 1.25rem;
+}
+.catalog .catalog-header {
+  color: #000000;
+  font: 2.625rem bold "Officina", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.catalog .nav-catalog ul {
+  border: 1px solid #e0ddd9;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+.catalog .nav-catalog ul li {
+  background-color: #ffffff;
+  border: 1px solid #e0ddd9;
+  font: 2.25rem normal "Officina", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  padding: 25px 30px;
+}
+.catalog .nav-catalog ul li:after {
+  background: url("../images/arrow-right.png") no-repeat;
+  background-size: 1.3125rem;
+  width: 1.3125rem;
+  height: 2rem;
+  float: right;
+  content: "";
+  position: relative;
+  top: 0.285em;
+}
+.search {
+  padding: 1.25rem;
+  background-color: #ffffff;
+  border: 2px solid #e0ddd9;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+.search .search-form label {
+  color: #767676;
+  font: 2rem normal "Officina", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.search .search-form input[type="search"],
+.search .search-form input[type="text"] {
+  border: 2px solid #e0ddd9;
+  height: 4rem;
+  line-height: 4rem;
+  width: 100%;
+  margin-top: 0.9375rem;
+}
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+/* http://sonspring.com/journal/clearing-floats */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+.clearfix:before,
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+/*
+  The following zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+*/
+.clearfix {
+  zoom: 1;
+}

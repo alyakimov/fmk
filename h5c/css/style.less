@@ -1,0 +1,313 @@
+@charset 'UTF-8';
+
+@import 'fonts.less';
+
+// variables
+
+@image_path: "../images";
+
+@baseFont: "Officina", Arial, sans-serif;
+@baseFontColor: #000000;
+
+@secondaryFontColor: #767676;
+
+@headerFont: "Officina", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+@headerFontColor: #000000;
+
+@baseColorlink: #000000;
+@baseHoverColorLink: #eb7c2d;
+@baseVisitColorLink: #eb7c2d;
+
+@borderColor: #e0ddd9;
+
+// mixin
+
+.radius(@radius:6px) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+    -webkit-background-clip: padding;
+       -moz-background-clip: padding;
+            background-clip: padding-box;
+}
+
+// css reset
+
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+input:not([type]), input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {padding-top: 0px;}
+input, input[type="password"], input[type="search"], isindex {border: 0px inset}
+button::-moz-focus-inner {border:0;padding:0;margin:0;}
+
+// main settings
+
+body {
+    background-color: #ece9e2;
+    color: @baseFontColor;
+    font-size: 16px;
+    font-family: @baseFont;    
+}
+
+img {
+    width: auto 9;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+
+a {
+    color: @baseColorlink;
+    text-decoration: none;
+}
+
+a:hover {
+    color: @baseHoverColorLink;
+}
+
+a:visit {
+    color: @baseVisitColorLink;
+}
+
+.page {
+    margin: 0 auto;
+    max-width: 640px;   
+}
+
+.container {    
+    margin-top: 1.25rem; // 20/16
+    margin-left: 1.25rem; // 20/16
+    margin-right: 1.25rem;  // 20/16
+}
+
+.nav-main {
+    background-color: #f4f4f4;
+    border-bottom: 2px solid @borderColor;    
+
+    ul li {
+        float: left;
+        font: 1.75rem normal @baseFont; // 28/16           
+        line-height: 5.5rem; // 88/16
+        height: 5.5rem; // 88/16
+        border-right: 2px solid @borderColor;
+        text-align: center;
+    }
+
+    ul li:last-child {
+        border-right: 0px;
+    }
+
+    .nav-main-logo {
+        width: 31.3235294%; // 213/680*100        
+    }
+
+    .nav-main-registration {
+        width: 35.4411765%; // 241/680*100
+    }
+
+    .nav-main-registration:after {
+        background:url("@{image_path}/arrow-down.png") no-repeat;
+        background-size: 1.3125rem; // 21/16
+        width: 1.3125rem; // 21/16
+        height: 2rem; // 32/16
+        float: right;
+        content: "";
+        position: relative;
+        top: 2rem;
+        right: 0.5rem;
+    }
+
+    .nav-main-enter {
+        width: 26.7647059%; // 182/680*100
+    }
+
+    .nav-main-enter:after {
+        background:url("@{image_path}/arrow-down.png") no-repeat;
+        background-size: 1.3125rem; // 21/16
+        width: 1.3125rem; // 21/16
+        height: 2rem; // 32/16
+        float: right;
+        content: "";
+        position: relative;
+        top: 2rem;
+        right: 0.5rem;
+    }
+}
+
+.nav-slave {
+    padding: 1.25rem; // 20/16
+    background-color: #ffffff;
+    border: 2px solid @borderColor;     
+    .radius;
+}
+
+.terms {
+    padding: 1.25rem; // 20/16
+    background-color: #ffffff;
+    border: 2px solid @borderColor;     
+    .radius;
+
+    .terms-header {
+        color: @headerFontColor;
+        font: 2.0625rem bold @headerFont; // 33/16
+    }
+
+    .terms-text {           
+        color: @secondaryFontColor;
+        font: 1.625rem italic @baseFont; // 26/16
+        margin-top: 1.25rem; // 20/16
+    }
+}
+
+.terms:after{
+    background:url("@{image_path}/arrow-right.png") no-repeat;
+    background-size: 1.3125rem; // 21/16
+    width: 1.3125rem; // 21/16
+    height: 2rem; // 32/16
+    float: right;
+    content: "";
+    position: relative;
+    top: -6rem;
+}
+
+.banner-header {
+    .banner img {
+        border: 2px solid @borderColor;
+        .radius;
+    }
+}
+
+.content {
+    .content-new-header,
+    .content-top-header {
+        color: @headerFontColor;
+        font: 2.625rem bold @headerFont; // 42/16
+        text-align: center;
+        margin-bottom: 2.5rem; // 40/16
+    }
+
+    .content-item {
+        float: left;
+        padding: 0.4375rem; // 7/16
+        background-color: #ffffff;
+        border: 2px solid @borderColor;
+        .radius;
+        width: 45%; // 270/600*100
+    }
+
+    .content-item:nth-child(even){
+        margin-left: 1.5rem; // 24/16
+        margin-bottom: 1.25rem; // 20/16
+    }
+
+    .content-item-header {
+        font: 1.75rem normal @headerFont; // 28/16
+        margin-top: 0.4375rem; // 7/16
+    }
+
+    .content-item-preview {
+        margin-top: 1.25rem; // 20/16
+    }
+}
+
+.catalog {
+    .catalog-header {
+        color: @headerFontColor;
+        font: 2.625rem bold @headerFont; // 42/16
+        text-align: center;
+        margin-bottom: 2.5rem; // 40/16
+    }
+
+    .nav-catalog {
+
+        ul {
+            border: 1px solid @borderColor;
+            .radius;
+        }
+
+        ul li {
+            background-color: #ffffff;
+            border: 1px solid @borderColor;
+            font: 2.25rem normal @headerFont; // 36/16
+            padding: 25px 30px;
+        }
+
+        ul li:after {
+            background:url("@{image_path}/arrow-right.png") no-repeat;
+            background-size: 1.3125rem; // 21/16
+            width: 1.3125rem; // 21/16
+            height: 2rem; // 32/16
+            float: right;
+            content: "";
+            position: relative;
+            top: 0.285em;
+        }
+    }
+}
+
+.search {
+    padding: 1.25rem; // 20/16
+    background-color: #ffffff;
+    border: 2px solid @borderColor;
+    .radius;
+
+    .search-form {
+        label {
+            color: @secondaryFontColor;
+            font: 2rem normal @headerFont; // 32/16
+        }
+
+        input[type="search"],
+        input[type="text"] {
+            border: 2px solid @borderColor;
+            height: 4rem;
+            line-height: 4rem; // 64/16
+            width: 100%;
+            margin-top: 0.9375rem; // 15/16
+        }
+    }
+}
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+.clearfix:before,
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+  The following zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+*/
+
+.clearfix {
+  zoom: 1;
+}
