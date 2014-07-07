@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=640">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="width">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Index</title>
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/carouFredSel/jquery.carouFredSel-6.2.1-packed.js"></script>
+    <!-- optionally include helper plugins -->
+    <script type="text/javascript" language="javascript" src="js/carouFredSel/helper-plugins/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/carouFredSel/helper-plugins/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/carouFredSel/helper-plugins/jquery.transit.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/carouFredSel/helper-plugins/jquery.ba-throttle-debounce.min.js"></script>
+    <script type="text/javascript">
+    //<![CDATA[
+    $(function() {
+
+        $('#screenshots').carouFredSel({
+            auto: false,
+            prev: '#prev-screenshots',
+            next: '#next-screenshots',
+            width: '100%',
+            scroll: 1,
+            mousewheel: true,
+            swipe: {
+                onMouse: true,
+                onTouch: true
+            },
+            items: {
+                visible: {
+                    min: 1,
+                    max: 9
+                }
+            }
+        });
+    });
+    //]]> 
+    </script>
+</head>
+<body>
+
+    <section class="nav-main">
+        <ul class="clearfix">
+            <li class="nav-main-logo"><a href="index.html"><img src="images/logo.png" width="173" alt=""></a></li>
+            <li class="nav-main-registration"><a href="login.html">Регистрация <img src="images/arrow-down.png" alt=""></a></li>
+            <li class="nav-main-enter"><img src="images/nologo.png" alt="*"> <a href="login.html">Вход <img src="images/arrow-down.png" alt="*"></a></li>
+        </ul>
+    </section>
+
+    <div class="page">      
+
+        <section class="container nav-slave">
+            <div class="clearfix">
+                <div class="btn-group">
+                    <a href="" class="btn btn-default btn-socialgame active">Социальные игры</a>
+                    <a href="" class="btn btn-default btn-online">On-line игры</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container terms">
+            <article>
+                <h1 class="terms-header">Условия</h1>   
+                <div class="terms-text">Вступайте в «Игровой клуб» и получите БЕСПЛАТНЫЙ доступ к самым популярным браузерным играм! Трафик бесплатный!</div>
+            </article>          
+        </section>
+
+        <section class="container banner-header">
+            <div class="banner">
+                <img src="images/demo/banner-main.png" alt="*"/>
+            </div>
+        </section>
+
+        <section class="container content">
+            <article>
+                <h1 class="content-header">Sky Warriors</h1>
+
+                <div class="content-rating">
+                    <ul>
+                        <li>Рейтинг</li>
+                        <li><img src="images/stars-active.png" alt="*"></li>
+                        <li><img src="images/stars-active.png" alt="*"></li>
+                        <li><img src="images/stars-active.png" alt="*"></li>
+                        <li><img src="images/stars.png" alt="*"></li>
+                        <li><img src="images/stars.png" alt="*"></li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+
+                    <div class="content-screenshots">
+                        <ul id="screenshots">
+                            <li style="height: 408px; width: 408px;"><img src="images/demo/game-3.png" width="408" height="408" alt=""></li>
+                            <li style="height: 408px; width: 408px;"><img src="images/demo/game-3.png" width="408" height="408" alt=""></li>
+                            <li style="height: 408px; width: 408px;"><img src="images/demo/game-3.png" width="408" height="408" alt=""></li>
+                            <li style="height: 408px; width: 408px;"><img src="images/demo/game-3.png" width="408" height="408" alt=""></li>
+                            <li style="height: 408px; width: 408px;"><img src="images/demo/game-3.png" width="408" height="408" alt=""></li>
+                        </ul>
+                        <a id="prev-screenshots" class="prev" href="#"><img src="images/array-screen-left.png" alt=""></a>
+                        <a id="next-screenshots" class="next" href="#"><img src="images/array-screen-right.png" alt=""></a>
+                    </div>
+
+                    <div class="content-description">
+                        <p>Что можно сделать, контролируя многотонную 
+                        летающую махину, до отказа набитую всевозможным 
+                        смертоносным оружием? Конечно же, наносить 
+                        миру добро и причинять справедливость!</p>
+                         
+                        <p>Sky Warriors - это 18 уровней, на протяжении 
+                        которых можно не только управлять истребителем, 
+                        но и другими опасными машинами разрушения. 
+                        Вам будут противостоять легионы летающих, 
+                        ползающих, плавающих и ездящих железных 
+                        монстров - аналоги реальных моделей военной 
+                        техники, а также абсолютно фантастические.</p>
+
+                        <p>множество уровней напряженного разнообразного геймплея
+                        <ul>
+                            <li>3 игровых режима, 4 мини-игры</li>
+                            <li>гигантские боссы уровней</li>
+                            <li>огромный арсенал оружия с возможностью прокачки</li>
+                            <li>противники – все виды наземной, воздушной и морской военной техники</li>
+                        </ul>
+                        </p>
+                    </div>
+
+                    <div>
+                        <a href="" class="btn btn-play btn-rounded">Играть</a>
+                    </div>
+                </div>
+
+                <div class="content-social-btns">
+                    <ul class="clearfix">
+                        <li><a href=""><img src="images/facebook.png" alt=""></a></li>
+                        <li><a href=""><img src="images/vk.png" alt=""></a></li>
+                        <li><a href=""><img src="images/twitter.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <section class="container catalog">
+            <article>
+                <h1 class="catalog-header">Каталог</h1>
+
+                <section class="nav-catalog">
+                    <ul>
+                        <li><a href="catalog.html">Аркады</a></li>
+                        <li><a href="catalog.html">Логические</a></li>
+                        <li><a href="catalog.html">Стрелялки</a></li>
+                        <li><a href="catalog.html">Приложения и виджеты</a></li>
+                        <li><a href="catalog.html">Приоденься</a></li>
+                        <li><a href="catalog.html">Виртуальные питомцы</a></li>
+                        <li><a href="catalog.html">HD Игры</a></li>
+                        <li><a href="catalog.html">HD Девушки</a></li>
+                        <li><a href="catalog.html">HD Приложения</a></li>
+                        <li><a href="catalog.html">HD Питомцы</a></li>
+                    </ul>
+                </section>
+            </article>
+        </section>
+
+        <section class="container search">
+            <div class="search-form">
+                <form action="" method="POST">
+                    <fieldset>
+                        <label for="search_text">Поиск</label>
+                        <div class="search-form-elements">
+                            <input type="search" id="search_text" name="search_text" value=""/><input type="submit" class="btn btn-search btn-rounded" name="submit_search" value="Найти"/>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

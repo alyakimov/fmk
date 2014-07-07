@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=640">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="width">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Index</title>
+</head>
+<body>
+
+    <section class="nav-main">
+        <ul class="clearfix">
+            <li class="nav-main-logo"><a href="index.html"><img src="images/logo.png" width="173" alt=""></a></li>
+            <li class="nav-main-registration"><a href="login.html">Регистрация <img src="images/arrow-down.png" alt=""></a></li>
+            <li class="nav-main-enter"><img src="images/nologo.png" alt="*"> <a href="login.html">Вход <img src="images/arrow-down.png" alt="*"></a></li>
+        </ul>
+    </section>
+
+    <div class="page"> 
+
+        <section class="container login">
+            <article>
+                <h1 class="login-header">Авторизация</h1>
+
+                <section class="login-form">
+                    <form action="" method="POST">
+                        <fieldset>
+                            <div>
+                                <label for="">Номер телефона</label>
+                                <p><input type="tel" name="msisdn" value=""/></p>
+                                <p class="login-form-description">Формат ввода номера через 7, например 7903XXXXXXX</p>
+                            </div>
+                            <div style="margin-top:10px;">
+                                <label for="">Пароль</label>
+                                <p><input type="password" name="password" value=""/></p>
+                            </div>
+                            <div>
+                                <p><input type="submit" class="btn btn-login btn-rounded" name="auth" value="Войти"/></p>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <div style="text-align:center; margin-top: 20px;">
+                        <a href="" class="btn btn-default btn-rounded" style="margin-right: 20px;">Регистрация</a>
+                        <a href="" class="btn btn-default btn-rounded">Напомнить пароль</a>
+                    </div>
+                </section>                
+            </article>
+        </section>
+    </div>
+</body>
+</html>
