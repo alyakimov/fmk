@@ -246,15 +246,6 @@ a:hover {
   font: 1.625rem italic "Officina", Arial, sans-serif;
   margin-top: 1.25rem;
 }
-.terms:after {
-  background: url("../images/arrow-right.png") no-repeat;
-  width: 0.875rem;
-  height: 1.3125rem;
-  content: "";
-  position: absolute;
-  top: 2.8125rem;
-  right: 1.25rem;
-}
 .banner-header .banner img {
   border: 2px solid #e0ddd9;
   -webkit-border-radius: 6px;
@@ -696,11 +687,10 @@ a.btn:visited {
   background: none;
   background: #ffc722;
 }
-.btn-socialgame {
-  width: 208px;
-}
-.btn-online {
-  width: 209px;
+.btn-nav {
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 180px;
 }
 .btn-play,
 .btn-login {
@@ -771,6 +761,12 @@ a.btn:visited {
 .btn-group .btn-group + .btn,
 .btn-group .btn-group + .btn-group {
   margin-left: -2px;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
 }
 /* `Clear Floated Elements
 ----------------------------------------------------------------------------------------------------*/
