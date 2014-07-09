@@ -379,29 +379,16 @@ a:hover {
 }
 .content .content-screenshots {
   position: relative;
-  width: 100%;
 }
 .content .content-screenshots ul {
-  display: block;
-  width: 240px;
-  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
 }
-.content .content-screenshots ul li {
-  display: block;
-  text-align: center;
+.content .content-screenshots #screenshots img {
   border: 2px solid #ffd823;
-  background-color: #ffd823;
   -webkit-border-radius: 22px;
   -moz-border-radius: 22px;
   border-radius: 22px;
-  -webkit-background-clip: padding;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
-}
-.content .content-screenshots #screenshots img {
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  border-radius: 25px;
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
   background-clip: padding-box;
