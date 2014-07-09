@@ -380,10 +380,6 @@ a:hover {
 .content .content-screenshots {
   position: relative;
 }
-.content .content-screenshots ul {
-  padding-left: 25px;
-  padding-right: 25px;
-}
 .content .content-screenshots #screenshots img {
   border: 2px solid #ffd823;
   -webkit-border-radius: 22px;
