@@ -185,6 +185,9 @@ a:hover {
     .content-item-header {
         font: 1.75rem normal @headerFont; // 28/16
         margin-top: 0.4375rem; // 7/16
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .content-item-preview {
@@ -271,7 +274,7 @@ a:hover {
 
         #screenshots img {
             border: 2px solid rgba(255, 216, 35, 1);
-            .radius(22px);
+            .radius(11px);
         }
 
         .prev {

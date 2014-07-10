@@ -292,6 +292,9 @@ a:hover {
 .contents .content-item-header {
   font: 1.75rem normal "Officina", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   margin-top: 0.4375rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .contents .content-item-preview {
   margin-top: 1.25rem;
@@ -382,9 +385,9 @@ a:hover {
 }
 .content .content-screenshots #screenshots img {
   border: 2px solid #ffd823;
-  -webkit-border-radius: 22px;
-  -moz-border-radius: 22px;
-  border-radius: 22px;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  border-radius: 11px;
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
   background-clip: padding-box;
