@@ -22,9 +22,11 @@
         $('#screenshots').carouFredSel({
             auto: false,
             prev: '#prev-screenshots',
-            next: '#next-screenshots',
-            width: '100%',
+            next: '#next-screenshots',            
             scroll: 1,
+            height: null,
+            width: null,
+            align: "center",
             mousewheel: true,
             swipe: {
                 onMouse: true,
@@ -40,7 +42,7 @@
     });
 
     if ($(window).width() < 768) { $('meta[name=viewport]').attr('content','width=640, initial-scale=.5, maximum-scale=.5'); }
-    //]]> 
+    //]]>
     </script>
 </head>
 <body>
@@ -96,11 +98,11 @@
 
                     <div class="content-screenshots">
                         <ul id="screenshots">
-                            <li style="height: 408px; width: 408px;"><img src="images/demo/game-3.png" width="408" height="408" alt=""></li>
-                            <li style="height: 408px; width: 408px;"><img src="images/demo/game-3.png" width="408" height="408" alt=""></li>
-                            <li style="height: 408px; width: 408px;"><img src="images/demo/game-3.png" width="408" height="408" alt=""></li>
-                            <li style="height: 408px; width: 408px;"><img src="images/demo/game-3.png" width="408" height="408" alt=""></li>
-                            <li style="height: 408px; width: 408px;"><img src="images/demo/game-3.png" width="408" height="408" alt=""></li>
+                            <li style="height: 244px; width: 556px;text-align:center;"><img src="images/demo/game-4.jpg" width="240" height="240" alt=""></li>
+                            <li style="height: 244px; width: 556px;text-align:center;"><img src="images/demo/game-3.png" width="240" height="240" alt=""></li>
+                            <li style="height: 244px; width: 556px;text-align:center;"><img src="images/demo/game-3.png" width="240" height="240" alt=""></li>
+                            <li style="height: 244px; width: 556px;text-align:center;"><img src="images/demo/game-3.png" width="240" height="240" alt=""></li>
+                            <li style="height: 244px; width: 556px;text-align:center;"><img src="images/demo/game-3.png" width="240" height="240" alt=""></li>
                         </ul>
                         <a id="prev-screenshots" class="prev" href="#"><img src="images/array-screen-left.png" alt=""></a>
                         <a id="next-screenshots" class="next" href="#"><img src="images/array-screen-right.png" alt=""></a>
