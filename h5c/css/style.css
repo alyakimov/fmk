@@ -301,6 +301,16 @@ a:hover {
 .contents .content-item-header {
   font: 1.75rem normal "Officina", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   margin-top: 0.4375rem;
+  white-space: nowrap;
+}
+.contents .content-item-header span {
+  float: left;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.contents .content-item-header img {
+  float: right;
 }
 .contents .content-item-preview {
   margin-top: 1.25rem;
