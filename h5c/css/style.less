@@ -184,10 +184,18 @@ a:hover {
 
     .content-item-header {
         font: 1.75rem normal @headerFont; // 28/16
-        margin-top: 0.4375rem; // 7/16
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        margin-top: 0.4375rem; // 7/16 
+        white-space: nowrap;             
+
+        span {    
+            float: left;    
+            width: 85%;
+            overflow: hidden;            
+            text-overflow: ellipsis;  
+        }
+        img {
+            float: right;
+        }
     }
 
     .content-item-preview {
